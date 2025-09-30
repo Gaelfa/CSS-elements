@@ -1,0 +1,17 @@
+<head>
+  <meta charset="UTF-8">
+  <title> CSS Night Mt. Scene</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scene">
+    <div class="sky"></div>
+    <div class="stars"></div>
+    <div class="moon"></div>
+    <div class="mountain back"></div>
+    <div class="mountain mid"></div>
+    <div class="mountain front"></div>
+    <div class="ground"></div>
+  </div>
+</body>
+</html>
