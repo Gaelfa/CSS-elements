@@ -1,0 +1,108 @@
+body{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/*sky with gradient*/
+.sky {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #fd5959, #fcff82, #afc5ff);
+  z-index: 0;
+}
+
+/*stars*/
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  box-shadow:
+    50px 100px white,
+    120px 200px white,
+    200px 80px white,
+    350px 150px white,
+    400px 300px white,
+    550px 200px white,
+    600px 100px white,
+    700px 250px white,
+    800px 180px white,
+    900px 120px white,
+    1000px 300px white,
+    1100px 220px white,
+    1200px 150px white,
+    1300px 100px white,
+    1400px 250px white,
+    1500px 200px white;
+  z-index: 1;
+}
+
+/*moon*/
+.moon {
+  position: absolute;
+  top: 4%;
+  left: 70%;
+  width: 120px; 
+  height: 120px;
+  background: #fcf4d9;
+  border-radius: 50%;
+  box-shadow: 0 0 40px 20px rgba(252, 244, 217, 0.5);
+  z-index: 2;
+}
+
+/* mt. layers*/
+.mountain {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 60%;
+  clip-path: polygon(-15% 100%, 15% 60%, 30% 80%, 45% 55%, 60% 70%, 75% 50%, 90% 65%, 100% 40%, 100% 100%);
+}
+
+.mountain.back {
+  background: #b9d2d2;
+  height: 75%; 
+  bottom: 25%;
+  z-index: 3;
+}
+
+.mountain.mid {
+  background: #055e68;
+  height: 72%;
+  bottom: 15%;
+  z-index: 4;
+}
+
+.mountain.front {
+  background: #343434;
+  height: 83%;
+  bottom: 5%;
+  z-index: 5;
+}
+
+/* ground/hills*/
+.ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 14.5%;
+  background: linear-gradient(to top, #68c170, #d6ec8c);
+  border-top-left-radius: 50% 30%;
+  border-top-right-radius: 50% 30%;
+  z-index: 6;
+}
